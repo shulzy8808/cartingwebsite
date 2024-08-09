@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { Badge } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 
 const Navcontainer = styled.div`
@@ -72,39 +73,42 @@ const Rightwrapper = styled.div`
 
 const Navbar = () => {
 return (
-<Navcontainer>
-<Left>
-<Leftwrapper> 
-<Language>
-    <select>
-    <option>EN </option>
-    <option>ES</option>
-    </select>
-    </Language>
-    <Searchbar>
-        <Searchtext placeholder='Search'/>
-    <SearchIcon/>
-    </Searchbar>
-    </Leftwrapper>
-</Left>
-<Center>
- 
- <Logo>Olivia&Marcus.</Logo>  
-</Center>
-<Right>
-   <Rightwrapper>
-    <Navregister>
-    REGISTER
-    </Navregister>
-    <Navsignup>
-        SIGNUP
-        </Navsignup>
-       <Badge badgeContent={2} color='primary'>
-        <ShoppingCartOutlinedIcon/>
-        </Badge> 
-        </Rightwrapper>
-</Right>
-</Navcontainer>
+    <Navcontainer>
+        <Left>
+            <Leftwrapper> 
+                <Language>
+                    <select>
+                        <option>EN </option>
+                        <option>ES</option>
+                    </select>
+                </Language>
+                <Searchbar>
+                    <Searchtext placeholder='Search'/>
+                    <SearchIcon/>
+                </Searchbar>
+            </Leftwrapper>
+        </Left>
+        <Center> 
+            <Link to="/">
+                <Logo>
+                    Olivia&Marcus.
+                </Logo>  
+            </Link>
+        </Center>
+        <Right>
+            <Rightwrapper>
+                <Navregister>
+                    REGISTER
+                </Navregister>
+                <Navsignup>
+                    SIGNUP
+                </Navsignup>
+                <Badge badgeContent={2} color='primary'>
+                    <ShoppingCartOutlinedIcon/>
+                </Badge> 
+            </Rightwrapper>
+        </Right>
+    </Navcontainer>
 )
 }
 

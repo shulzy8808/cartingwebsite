@@ -1,5 +1,3 @@
-
-
 export  const slideItems = [
   {
     id: 1,
@@ -28,17 +26,17 @@ export const categories = [
   {
     id: 1,
     title:  'SPORTWEARS!',
-    img: '/img/sportwear.jpeg',
+    img: 'https://images.pexels.com/photos/864939/pexels-photo-864939.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
   },
   {
     id: 2,
     title:  'MENWEARS!',
-    img: '/img/menwears.jpeg',
+    img: 'https://images.pexels.com/photos/23878727/pexels-photo-23878727/free-photo-of-portrait-of-man-with-afro-standing-with-hand-raised.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
   },
   {
-    id: 1,
+    id: 3,
     title:  'WOMENWEARS!',
-    img: '/img/womenwears.jpeg',
+    img: 'https://images.pexels.com/photos/20257471/pexels-photo-20257471/free-photo-of-man-in-blue-clothes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
   }
 ]
 

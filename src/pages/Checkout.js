@@ -85,9 +85,9 @@ const Productsum = styled.div`
   align-items: center;
 `
 const Productnum = styled.span`
- border-radius: 8px;
- border: 1px solid black;
- padding: .7em;
+  border-radius: 8px;
+  border: 1px solid black;
+  padding: .7em;
 `
 const Productbtn = styled.button`
   margin-left: 4em;
