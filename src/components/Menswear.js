@@ -3,7 +3,6 @@ import styled from "styled-components"
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import SearchIcon from '@mui/icons-material/Search';
-import {products} from '../data';
 import axios from "axios";
 import { useEffect, useState } from "react";
 
@@ -75,17 +74,17 @@ justify-content: center;
 
 `
 
-const Products = () => {
-    const [product, setProduct] = useState([]); 
+const Menswear = () => {
+    const [products, setProduct] = useState([]); 
     const [isLoading, setLoading] = useState(false);
 
     const getProducts = async () => {
             try {
                 setLoading(true);
-                const response = await axios.get("http://localhost:3001/api/products");
+                const response = await axios.get("http://localhost:3001/api/menswear");
                 setLoading(true);
                 setProduct(response.data);
-                console.log(product);
+                console.log(products);
                 
             } catch (error) {
                 console.log(error);
@@ -103,7 +102,7 @@ const Products = () => {
                     <Productimg src={item.img} />
                         <Productdesc>
                                 <Productname>
-                                    {item.title}
+                                    {item.name}
                                 </Productname>
                             <Iconic>
                                 <Icon>
@@ -123,4 +122,4 @@ const Products = () => {
     )
 }
 
-export default Products
+export default Menswear;
